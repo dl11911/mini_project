@@ -16,7 +16,7 @@ public class UserDAOImpl implements UserDAO {
     private final SqlSession sqlSession;
     @Override
     public void insertUser(UserDTO userDTO) {
-        sqlSession.insert("userSQL.write", userDTO);
+        sqlSession.insert("userSQL.writeUser", userDTO);
     }
 
     @Override

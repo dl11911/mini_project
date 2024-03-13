@@ -49,7 +49,10 @@ public class SpringConfiguration {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource());
         sqlSessionFactoryBean.setConfigLocation(new ClassPathResource("mybatis-config.xml"));
-        sqlSessionFactoryBean.setMapperLocations(new ClassPathResource("mapper/userMapper.xml"));
+        sqlSessionFactoryBean.setMapperLocations(
+                new ClassPathResource("mapper/userMapper.xml"),
+                new ClassPathResource("mapper/productMapper.xml"))
+        ;
 
         return sqlSessionFactoryBean.getObject();
     } // sqlSessionFactory

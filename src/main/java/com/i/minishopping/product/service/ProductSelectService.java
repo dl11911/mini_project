@@ -20,14 +20,14 @@ public class ProductSelectService implements ProductService {
         List<ProductDTO> list = productDAO.getProductList();
         System.out.println("일련번호\t재품명\t가격\t\t브랜드\t\t카테고리\t\t등록자\t\t등록시간\t\t\t\t좋아요");
         for(ProductDTO productDTO : list){
-            System.out.println(" " + productDTO.getProduct_id() + "\t\t"
-                             + productDTO.getPd_name() + "\t\t"
-                             + productDTO.getPd_price() + "\t\t"
-                             + productDTO.getBrand_id() + "\t\t\t"
-                             + productDTO.getPd_category() + "\t\t\t"
-                             + productDTO.getCreated_who() + "\t\t"
-                             + productDTO.getCreated_at() + "\t\t"
-                             + productDTO.getCount_love());
+            System.out.println(" " + productDTO.getProductId() + "\t\t"
+                             + productDTO.getPdName() + "\t\t"
+                             + productDTO.getPdPrice() + "\t\t"
+                             + productDTO.getBrandId() + "\t\t\t"
+                             + productDTO.getPdCategory() + "\t\t\t"
+                             + productDTO.getCreatedWho() + "\t\t"
+                             + productDTO.getCreatedAt() + "\t\t"
+                             + productDTO.getCountLove());
 
         } // for
 

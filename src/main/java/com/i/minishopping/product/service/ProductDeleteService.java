@@ -24,7 +24,7 @@ public class ProductDeleteService implements ProductService {
         int sw = 0;
         for(ProductDTO productDTO : list) {
 
-            if(productDTO.getProduct_id() == product_id) {
+            if(productDTO.getProductId() == product_id) {
 
                 sw = 1;
                 productDAO.deleteProduct(productDTO);

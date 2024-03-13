@@ -25,7 +25,7 @@ public class ProductUpdateService implements ProductService {
         int sw = 0;
         for(ProductDTO productDTO : list) {
 
-            if(productDTO.getProduct_id() == product_id) {
+            if(productDTO.getProductId() == product_id) {
 
                 System.out.println(productDTO);
                 System.out.println();
@@ -38,9 +38,9 @@ public class ProductUpdateService implements ProductService {
                 String pd_category = sc.next();
 
 
-                productDTO.setPd_name(pd_name);
-                productDTO.setPd_price(pd_price);
-                productDTO.setPd_category(pd_category);
+                productDTO.setPdName(pd_name);
+                productDTO.setPdPrice(pd_price);
+                productDTO.setPdCategory(pd_category);
 
                 productDAO.updateProduct(productDTO);
                 sw = 1;

@@ -2,10 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
 <mapper namespace="userSQL">
 
-    <insert id="write" parameterType="user">
+    <insert id="writeUser" parameterType="user">
         insert into user values(#{userId}, #{userEmail}, #{userPassword},#{userRole},#{userPnum})
     </insert>
 
@@ -22,3 +21,4 @@
     </delete>
 
 </mapper>
+

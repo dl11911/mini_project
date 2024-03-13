@@ -16,8 +16,8 @@ public class ProductDAOMybatis implements ProductDAO {
     private SqlSession sqlSession;
 
     @Override
-    public void write(ProductDTO productDTO) {
-        sqlSession.insert("productSQL.write", productDTO);
+    public void writeProduct(ProductDTO productDTO) {
+        sqlSession.insert("productSQL.writeProduct", productDTO);
     }
 
     @Override

@@ -10,24 +10,24 @@ import java.time.LocalDateTime;
 @Getter
 @Component
 public class ProductDTO {
-    private Long product_id;
-    private String pd_name;
-    private int pd_price;
-    private Long brand_id;
-    private String pd_category;
-    private Long created_who;
-    private LocalDateTime created_at;
-    private int count_love;
+    private Long productId;
+    private String pdName;
+    private int pdPrice;
+    private Long brandId;
+    private String pdCategory;
+    private Long createdWho;
+    private LocalDateTime createdAt;
+    private int countLove;
 
     @Override
     public String toString() {
-        return product_id + "\t"
-                + pd_name + "\t"
-                + pd_price + "\t"
-                + brand_id + "\t"
-                + pd_category + "\t"
-                + created_who + "\t"
-                + created_at + "\t"
-                + count_love;
+        return productId + "\t"
+                + pdName + "\t"
+                + pdPrice + "\t"
+                + brandId + "\t"
+                + pdCategory + "\t"
+                + createdWho + "\t"
+                + createdAt + "\t"
+                + countLove;
     }
 }

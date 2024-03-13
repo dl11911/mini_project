@@ -5,7 +5,7 @@ import com.i.minishopping.product.bean.ProductDTO;
 import java.util.List;
 
 public interface ProductDAO {
-    void write(ProductDTO productDTO);
+    void writeProduct(ProductDTO productDTO);
 
     List<ProductDTO> getProductList();
 

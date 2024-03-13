@@ -24,9 +24,9 @@
     <context:component-scan base-package="com.i.minishopping.user.dao" />
     <context:component-scan base-package="com.i.minishopping.user.service" />
 
-<!--    <context:component-scan base-package="com.i.minishopping.product.bean" />-->
-<!--    <context:component-scan base-package="com.i.minishopping.product.dao" />-->
-<!--    <context:component-scan base-package="com.i.minishopping.product.service" />-->
+    <context:component-scan base-package="com.i.minishopping.product.bean" />
+    <context:component-scan base-package="com.i.minishopping.product.dao" />
+    <context:component-scan base-package="com.i.minishopping.product.service" />
 
 
 

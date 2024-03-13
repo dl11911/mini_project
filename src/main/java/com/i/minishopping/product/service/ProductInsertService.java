@@ -27,13 +27,13 @@ public class ProductInsertService implements ProductService {
         System.out.print("등록자 입력 : ");
         Long created_who = sc.nextLong();
 
-        productDTO.setPd_name(pd_name);
-        productDTO.setPd_price(pd_price);
-        productDTO.setBrand_id(brand_id);
-        productDTO.setPd_category(pd_category);
-        productDTO.setCreated_who(created_who);
-
-        productDAO.write(productDTO);
+        productDTO.setPdName(pd_name);
+        productDTO.setPdPrice(pd_price);
+        productDTO.setBrandId(brand_id);
+        productDTO.setPdCategory(pd_category);
+        productDTO.setCreatedWho(created_who);
+        System.out.println(productDTO.getPdName());
+        productDAO.writeProduct(productDTO);
 
         System.out.println("데이터가 저장됐습니다.");
     }
