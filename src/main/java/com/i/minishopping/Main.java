@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 
 @Configuration
-@ComponentScan(basePackages = "com.i.minishopping")
+/*@ComponentScan(basePackages = "com.i.minishopping")*/
 public class Main {
 
     private static UserService userService;
@@ -21,7 +21,7 @@ public class Main {
     public void menu(ApplicationContext applicationContext){
         Scanner scan = new Scanner(System.in);
         // num = 1 : user, num = 2 : product
-        int num = 2;
+        int num = 3;
         choseMenu(applicationContext, num);
 
     } // menu
@@ -32,7 +32,7 @@ public class Main {
         Main main = (Main)applicationContext.getBean("main");
         main.menu(applicationContext);
 
-        System.out.println("\n프로그램 종료합니다");
+        System.out.println("\n프로그램을 종료합니다. ^^7");
     } // main
 
     public void choseMenu(ApplicationContext applicationContext, int n){
@@ -99,6 +99,36 @@ public class Main {
             }
         } // while
 
+        if(n==3){
+            while(true) {
+                System.out.println();
+                System.out.println("1. 입력");
+                System.out.println("2. 출력");
+                System.out.println("3. 수정");
+                System.out.println("4. 삭제");
+                System.out.println("5. 끝");
+                System.out.println("번호 입력 : ");
+                num = scan.nextInt();
+                switch (num) {
+                    case 1:
+                        userService = (UserService) applicationContext.getBean("userDetailInsertService");
+                        break;
+                    case 2:
+                        userService = (UserService) applicationContext.getBean("userDetailSelectService");
+                        break;
+                    case 3:
+                        userService = (UserService) applicationContext.getBean("userDetailUpdateService");
+                        break;
+                    case 4:
+                        userService = (UserService) applicationContext.getBean("userDetailDeleteService");
+                        break;
+                    case 5:
+                        break;
+                } // switch
+
+                userService.execute();
+            }
+        } // while
     } // menu
 
 } // end class

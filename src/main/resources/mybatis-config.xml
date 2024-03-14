@@ -11,6 +11,7 @@
     <typeAliases>
         <typeAlias type="com.i.minishopping.user.bean.UserDTO" alias="user" />
         <typeAlias type="com.i.minishopping.product.bean.ProductDTO" alias="product" />
+        <typeAlias type="com.i.minishopping.user.bean.UserDetailDTO" alias="userDetail"/>
 <!--        <typeAlias type="product.bean.ProductDetailDTO" alias="pdDetail"/>-->
 <!--        <typeAlias type="product.bean.ProductDetailDTO" alias="pdLog"/>-->
     </typeAliases>
