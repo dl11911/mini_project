@@ -1,0 +1,54 @@
+
+g
+java:S1192-"JDefine a constant instead of duplicating this literal "2. ì¶œë ¥" 3 times.(›–ò8âêÜã1
+g
+java:S1192,"JDefine a constant instead of duplicating this literal "1. ì…ë ¥" 3 times.(³Àº¢8âêÜã1
+m
+java:S11921"QDefine a constant instead of duplicating this literal "ë²ˆí˜¸ ì…ë ¥ : " 3 times.(¶âè/8âêÜã1
+l
+java:S1192."JDefine a constant instead of duplicating this literal "3. ìˆ˜ì •" 3 times.(—ŞÜøşÿÿÿÿ8ãêÜã1
+g
+java:S1192/"JDefine a constant instead of duplicating this literal "4. ì‚­ì œ" 3 times.(Ü°â´8ëîŸÜã1
+=
+java:S2189*""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+D
+java:S2189H""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ÂìÜã1
+=
+java:S2189g""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+N
+java:S1854"8Remove this useless assignment to local variable "scan".(ÅÒ²º
+?
+java:S1481")Remove this unused "scan" local variable.(ÅÒ²º
+t
+java:S3776&"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ô†åúÿÿÿÿ8ÌìÜã1
+7	java:S1313""Add a default case to this switch.(’ÎÁÄ
+Q
+java:S26965"6Make the enclosing method "static" or remove this set.(ÓÌÆ˜üÿÿÿÿ
+Q
+java:S26968"6Make the enclosing method "static" or remove this set.(Õ÷¹áûÿÿÿÿ
+L
+java:S2696;"6Make the enclosing method "static" or remove this set.(¢‘¢…
+L
+java:S2696>"6Make the enclosing method "static" or remove this set.(°ßä
+7	java:S131Q""Add a default case to this switch.(’ÎÁÄ
+Q
+java:S2696S"6Make the enclosing method "static" or remove this set.(÷áÔ™ùÿÿÿÿ
+Q
+java:S2696V"6Make the enclosing method "static" or remove this set.(æ³¡ƒüÿÿÿÿ
+L
+java:S2696Y"6Make the enclosing method "static" or remove this set.(ü•îÒ
+L
+java:S2696\"6Make the enclosing method "static" or remove this set.(£ó‡‰
+>	java:S131p""Add a default case to this switch.(’ÎÁÄ8ØìÜã1
+S
+java:S2696r"6Make the enclosing method "static" or remove this set.(úºÒÓ8ØìÜã1
+S
+java:S2696u"6Make the enclosing method "static" or remove this set.(äç¿Ì8ØìÜã1
+X
+java:S2696x"6Make the enclosing method "static" or remove this set.(‰ı×äıÿÿÿÿ8ÙìÜã1
+S
+java:S2696{"6Make the enclosing method "static" or remove this set.(‚©õ¥8ÙìÜã1
+l
+java:S1128"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ
+`
+java:S1128	"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ
