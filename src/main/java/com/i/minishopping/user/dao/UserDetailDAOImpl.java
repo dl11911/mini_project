@@ -18,22 +18,26 @@ public class UserDetailDAOImpl implements UserDetailDAO{
             sqlSession.insert("userDetailSQL.writeUserDetail",userDetailDTO);
         }
 
-  
-
-    @Override
-    public void updateUserDetail(UserDetailDTO userDetail) {
-        
-    }
 
     @Override
     public List<UserDetailDTO> getUserDetailList() {
             return sqlSession.selectList("userDetailSQL.getUserDetailList");
     }
 
-        /*@Override
-        public void updateUserDetail(UserDetailDTO userDetailDTO) {
-            sqlSession.update("userSQL.updateUserDetail",userDetailDTO);
-        }*/
+    @Override
+    public UserDetailDTO getUserById(Long userId) {
+        return sqlSession.selectOne("userDetailSQL.getUserById",userId);
+    }
+
+    @Override
+    public void deleteUserDetail(Long userId) {
+        sqlSession.delete("userDetailSQL.deleteUserDetail",userId);
+    }
+
+    @Override
+    public void updateUserDetail(UserDetailDTO userDetailDTO) {
+        sqlSession.update("userDetailSQL.updateUserDetail",userDetailDTO);
+    }
 
 
 
