@@ -4,14 +4,28 @@ import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 import com.i.minishopping.user.bean.UserDTO;
+import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Repository
 @RequiredArgsConstructor
-public class UserDAOImpl implements UserDAO {
+ public class UserDAOImpl implements UserDAO {
 
     private final SqlSession sqlSession;
+
+
+
+    @Override
+    public UserDTO selectUserByEmailAndPassword(String userEmail, String userPassword) {
+        // MyBatis의 parameterType이 Map일 때는, 파라미터를 Map 객체에 담아서 전달합니다.
+        Map<String, Object> params = new HashMap<>();
+        params.put("userEmail", userEmail);
+        params.put("userPassword", userPassword);
+        return sqlSession.selectOne("userSQL.getUserByEmailAndPassword", params);
+    }
     @Override
     public void insertUser(UserDTO userDTO) {
         sqlSession.insert("userSQL.writeUser", userDTO);

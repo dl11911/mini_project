@@ -5,4 +5,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserService {
         public void execute();
+
+
+        /*boolean login(String userId, String password);*/
+
 }
